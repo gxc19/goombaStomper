@@ -27,6 +27,7 @@ body {
 
 .top,
 .bottom {
+  position: relative;
   width: 100%;
   display: grid;
   grid-template-columns: 33.3% 33.3% 33.3%;
@@ -38,7 +39,15 @@ body {
   justify-content: space-evenly;
 }
 
-.pipe {
+.box {
+  position: relative;
+  display: grid;
+  width: 100%;
+}
+
+.pipe,
+.goomba {
+  position: absolute;
   height: auto;
   width: 150px;
   place-self: center;
