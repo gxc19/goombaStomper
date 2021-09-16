@@ -1,4 +1,88 @@
 body {
-  background-color: rgb(207, 165, 87);
+  background-color: rgb(24, 148, 107);
   margin: 0;
+  overflow: hidden;
+}
+
+.topBar {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  background-color: rgb(128, 128, 207);
+}
+
+.container2 {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.game-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 1000px;
+  background-color: lightgreen;
+}
+
+.game {
+  background-color: orange;
+  height: 500px;
+  width: 1000px;
+  display: grid;
+  grid-template-rows: 33.3% 33.3% 33.3%;
+}
+
+.top,
+.bottom {
+  display: grid;
+  grid-template-columns: 33.3% 33.3% 33.3%;
+}
+
+.middle {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.box {
+  position: relative;
+  display: grid;
+}
+
+.box2 {
+  display: flex;
+  justify-content: center;
+}
+
+.pipe,
+.goomba {
+  position: absolute;
+  height: auto;
+  width: 150px;
+  place-self: center;
+  transition: all 1s ease;
+}
+
+/* .goombaUp {
+  animation-name: goomba;
+  animation-duration: 1.5s;
+}
+
+@keyframes goomba {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-130px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+} */
+
+#start {
+  cursor: pointer;
 }
