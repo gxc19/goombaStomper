@@ -45,12 +45,14 @@ const randomPick = () => {
 };
 
 for (let i = 0; i < goomba.length; i++){
-  goomba[i].addEventListener("click", (e) => {
+  goomba[i].addEventListener("click", () => {
   goomba[i].src = "images/deadGoomba.png";
     setTimeout(() => {
       goomba[i].src = "images/goomba.png";
     }, 1200);
     console.log("bonk!");
+    ++scoreBoard
+    score.innerHTML = `Score: ${scoreBoard}`
   });
 }
 
